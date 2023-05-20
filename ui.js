@@ -31,6 +31,19 @@ class UI {
         `;
     }
 
+    // show user repos
+    showRepos(repos) {
+        let output = '';
+
+
+        repos.forEach(function(repo) {
+            output += `
+            
+            
+            `;
+        });
+    }
+
 //show alert
 showAlert(message, className) {
     // clear all rem ALert
@@ -39,7 +52,7 @@ showAlert(message, className) {
     const div = document.createElement('div');
 
     //add class
-    div.click = className;
+    div.className = className;
 
     // add text
     div.appendChild(document.createTextNode(message));
@@ -53,7 +66,12 @@ showAlert(message, className) {
     //insert alert
     container.insertBefore(div, search);
 
-document.querySelector('.alert').style.color = 'red'
+
+    //time out 
+    setTimeout(() => {
+        this.clearAlert();
+    }, 3000);
+
 }
 
 
