@@ -1,3 +1,15 @@
 body{
     background-color: rgb(181, 187, 192);
 }
+
+.main{
+    background-color: rgb(69, 111, 250);
+}
+
+.btn-primary{
+    background-color: rgb(13, 66, 241);
+}
+
+.alert{
+    color: red;
+}
